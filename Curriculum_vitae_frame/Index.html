@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+:root{
+    --box-color: beige;
+    }
+
+.box{ /* caja */
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.beige-box{
+    background: var(--box-color,beige);
+}
+
+.red-text{
+        color : red;
+    }
+
+.alingn-Text{
+    text-align: right;
+}
+
+h2 {
+    font-family: lobster,monospace;
+    font-size: 50px;
+} 
+
+h1{
+    /*font-family: lobster;*/
+    font-size: 20px;
+}
+
+.thick-black-border {
+    border-color: rgba(0, 128, 90, 0.151);
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+.smaller-image{
+    width: 250px;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+/*div {
+    background-color: #f5f5dd;
+}*/
+
+p{
+    font-size: 18px;
+}
+
+/* Planeación de progreso de css */
+/*.circular-progress{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin: auto;
+    background: linear-gradient(
+        0deg,
+        #fff 50%,
+        rgba(#fff,.2) 50%
+    );
+    position: relative;
+    &:before{
+        content: "";
+        width: 12rem;
+        height: 12rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #111 content-box;
+        border-radius:50%;
+        padding:.5em;
+        box.sizing:border-box;
+    }
+}*/
+
+/* Creacion de graficas */
+/* grafico de color verde*/
+.grafico {
+position: relative; /* IE is dumb */
+width: 200px;
+border: 1px solid #B1D632;
+padding: 2px;
+}
+
+.grafico .barra {
+display: block;
+position: relative;
+background: #B1D632;
+text-align: center;
+color: #333;
+height: 2em;
+line-height: 2em;
+}
+
+.grafico .barra span {
+position: absolute; left: 1em;
+}
+
+/*grafico color azul*/
+.grafico1{
+position: relative; /* IE is dumb */
+width: 200px;
+border: 1px solid #498AD8;
+padding: 2px;
+}
+
+.grafico1 .barra1 {
+display: block;
+position: relative;
+background: #498AD8;
+text-align: center;
+color: #333;
+height: 2em;
+line-height: 2em;
+}
+
+.grafico1 .barra1 span {
+position: absolute; left: 1em;
+}
+
+/*grafico color rojo*/
+.grafico2{
+position: relative; /* IE is dumb */
+width: 200px;
+border: 1px solid #EC0D28;
+padding: 2px;
+}
+
+.grafico2 .barra2 {
+display: block;
+position: relative;
+background: #EC0D28;
+text-align: center;
+color: #333;
+height: 2em;
+line-height: 2em;
+}
+
+.grafico2 .barra2 span {
+position: absolute; left: 1em;
+}
+
+/*grafico color amarillo*/
+.grafico3{
+position: relative; /* IE is dumb */
+width: 200px;
+border: 1px solid #ECBD0D;
+padding: 2px;
+}
+
+.grafico3 .barra3 {
+display: block;
+position: relative;
+background: #ECBD0D;
+text-align: center;
+color: #333;
+height: 2em;
+line-height: 2em;
+}
+
+.grafico3 .barra3 span {
+position: absolute; left: 1em;
+}
+
+/* color grafico aqua */
+.grafico4{
+position: relative; /* IE is dumb */
+width: 200px;
+border: 1px solid #03FED4;
+padding: 2px;
+}
+
+.grafico4 .barra4 {
+display: block;
+position: relative;
+background: #03FED4;
+text-align: center;
+color: #333;
+height: 2em;
+line-height: 2em;
+}
+
+.grafico4 .barra4 span {
+position: absolute; left: 1em;
+}
+</style>
+
+<html lang="Es"> <!-- Es para indicarle a los robots que el lenguaje que se maneja es español = lang = "es" -->
+    <head>
+            <meta charset="UTF-8"> <!-- Hace que el programa acepte ñ , y acentos -->
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Es para que sea compatible en la red -->
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Es para que el programa se acomode segun las dimenciones de las ventanas -->
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+            <title> CURRICULUM VITAE </title>
+    </head>
+    <h2 align="center" class="red-text" > CURRICULUM VITAE </h2>
+
+    <div class="selector-for-some-widget beige-box border border-secondary ">
+        <!-- class="smaller-image thick-black-border" -->
+        <img style="float:left"  src="img/My.jpg" class="smaller-image thick-black-border" >
+        <br><span class="badge badge-pill badge-primary"><h4> INFORMATION OF THE CONTACT: </h4></span>
+        <p>  
+            PHONE: 15255746 <br>
+            AGE: 21 <br>
+            SOCIAL NETWORKS: Facebook, Instagram, Whatsapp <br>
+            NATIONALITY: Mexico <br>
+        </p>
+        <span style="float: right"> 
+        <span class="badge badge-pill badge-primary"><h4> LAST TWO DEGREES OF STUDY: </h4></span>
+        <p> 
+            Secondary School. <br>
+            High School. <br>
+            Sixth semester of the engineering career in computacion. <br> 
+        </p>
+        </span><br><br>
+        <span class="badge badge-pill badge-primary"><h4> ABILITIES: </h4></span>
+            <ol>
+                <br>
+                <li class="grafico"><strong class="barra" style="width: 80%;">JavaScript 80%</strong></li>
+                <li class="grafico1"><strong class="barra1" style="width: 50%;">c# 50%</strong></li>
+                <li class="grafico2"><strong class="barra2" style="width: 80%;">c++ 80%</strong></li>
+                <li class="grafico3"><strong class="barra3" style="width: 80%;">database 80%</strong></li>
+                <li class="grafico4"><strong class="barra4" style="width: 90%;">Web Developer 90%</strong></li>
+            </ol>
+        <span style="float: right">   
+        <span class="badge badge-pill badge-primary"><h4> WORK EXPERIENCE: </h4></span>
+        <p>
+            Waiter at wings restaurant 2015 - 2017 <br>
+            Web developer’s assistant  2017 - 2018 <br>
+        </p>
+        <span class="badge badge-pill badge-primary"><h4> PROJECT EXPERIENCE: </h4></span>
+        <p> 
+            Creation of a website for a pizza restaurant. <br>
+            Creation of a website for a company that sells cleaning products. <br>
+            Help in creating a sales app. <br>
+        </p>
+        <span class="badge badge-pill badge-primary"><h4>  PROFESSIONAL INTERESTS: </h4></span>
+        <P>  
+            Work in a company where websites can be developed, javascript or c# <br>
+        </P>
+    </span>
+    <span class="badge badge-pill badge-primary"><h4> KNOW SOFTWARE: </h4></span>
+            <ol>
+                <br>
+                <li class="grafico"><strong class="barra" style="width: 70%;">Unity  70%  </strong></li>
+                <li class="grafico1"><strong class="barra1" style="width: 60%;">Ofiice 60%  </strong></li>
+                <li class="grafico2"><strong class="barra2" style="width: 50%;">Linux  50%</strong></li>
+                <li class="grafico3"><strong class="barra3" style="width: 50%;">Phyton 50%</strong></li>
+            </ol>
+            <!-- Empezando hacer la grafica circular -->
+            <span class="badge badge-pill badge-primary"> <h4> MANAGING LANGUAGE </h4></span>
+            <!--<div class="grafico"><strong class="barra" style="width: 24%;">24%</strong></div>-->
+        <ol>
+            <br>
+            <li class="grafico"><strong class="barra" style="width: 90%;">Spanish 90% </strong></li>
+            <li class="grafico1"><strong class="barra1" style="width: 50%;"> English 50% </strong></li>
+        </ol>
+        <span class="badge badge-pill badge-primary"><h4> REFERENCES: </h4></span>
+        <ol>
+            <li> Erick Omar Padilla Gonzalez.  Phone: 1525487545 </li>
+            <li> Sergio Raymundo Ocampo Muñoz. Phone: 1525489632 </li>
+        </ol>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
